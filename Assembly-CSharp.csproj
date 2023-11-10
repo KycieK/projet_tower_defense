@@ -68,6 +68,10 @@
     <Compile Include="Assets\Scenes\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scenes\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scenes\Scripts\Turret.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Shop.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Node.cs" />
+    <Compile Include="Assets\Scenes\Scripts\BuildManager.cs" />
+    <Compile Include="Assets\Scenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scenes\Scripts\Waypoints.cs" />
   </ItemGroup>
   <ItemGroup>
