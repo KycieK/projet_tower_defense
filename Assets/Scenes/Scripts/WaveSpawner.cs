@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.AI;
 public class WaveSpawner : MonoBehaviour
 {
     public Transform enemyPrefab; 
@@ -23,7 +24,9 @@ public class WaveSpawner : MonoBehaviour
 
         countdown -= Time.deltaTime;
 
-        waveCountdownText.text = Mathf.Round(countdown).ToString();
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
+
+        waveCountdownText.text = string.Format("Next Wave : {0:00.0}", countdown);
     }
 
     IEnumerator SpawnWave()
