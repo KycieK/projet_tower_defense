@@ -1,18 +1,42 @@
+using System.Runtime;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+     public int health = 100;
      public float speed = 10f;
      public int damage = 1;
 
+     public int moneyDrop = 20;
+     
+
      private Transform target; 
      private int wavepointIndex = 0;
+     public GameObject deathEffect;
 
 
      void Start ()
      {
           target = Waypoints.points[0];
+     }
+
+     public void TakeDamage(int amount) 
+     {
+          health -= amount;
+
+          if (health <= 0) 
+          {
+               Die();
+          }
+     }
+
+     void Die()
+     {
+          Destroy(gameObject);
+          GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+          Destroy(effect, 2f);
+          PlayerStats.Money += moneyDrop;
      }
 
      void Update ()
