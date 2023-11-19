@@ -18,15 +18,21 @@ public class WaveSpawner : MonoBehaviour
     {
         if(countdown <= 0f) 
         {
+            Debug.Log("Vague en route !");
             StartCoroutine(SpawnWave());
-            countdown = timeBetweenWaves;
+            countdown = timeBetweenWaves ;
         }
 
-        countdown -= Time.deltaTime;
+        countdown -= Time.deltaTime * WorldTime.actionSpeed;
 
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
         waveCountdownText.text = string.Format("Next Wave : {0:00.0}", countdown);
+    }
+
+    public void SkipWave()
+    {
+        countdown = 0f;
     }
 
     IEnumerator SpawnWave()
@@ -36,7 +42,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.5f / WorldTime.actionSpeed);
         }
     }
 
@@ -44,6 +50,5 @@ public class WaveSpawner : MonoBehaviour
     {
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
-
 
 }

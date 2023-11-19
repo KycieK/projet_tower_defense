@@ -366,6 +366,8 @@
 "Assets/Scenes/Scripts/TurretBlueprint.cs"
 "Assets/Scenes/Scripts/WaveSpawner.cs"
 "Assets/Scenes/Scripts/Waypoints.cs"
+"Assets/Scenes/Scripts/WorldSpeedUI.cs"
+"Assets/Scenes/Scripts/WorldTime.cs"
 -langversion:9.0
 
 /deterministic

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
      public int health = 100;
-     public float speed = 10f;
+     public float speed = 10f ;
      public int damage = 1;
 
      public int moneyDrop = 20;
@@ -42,9 +42,9 @@ public class Enemy : MonoBehaviour
      void Update ()
      {
           Vector3 dir = target.position - transform.position; 
-          transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+          transform.Translate(dir.normalized * speed * Time.deltaTime * WorldTime.actionSpeed, Space.World);
 
-          if (Vector3.Distance(transform.position, target.position) <= 0.2f)
+          if (Vector3.Distance(transform.position, target.position) <= 0.5f) //plus la valeure xf est grande plus on a un chemin approximatif
           {
                GetNextWaypoint();
           }
