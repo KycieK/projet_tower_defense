@@ -1,27 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
 
 public class WorldTime : MonoBehaviour
 {
-    public static float actionSpeed = 1;
-    private static int nmbreClics = 1;
+    private static float actionSpeed = 1;
  
 
     public static void ChangeActionSpeed()
     {
-        nmbreClics ++;
+        actionSpeed ++;
 
-        if(nmbreClics > 3) 
+        if(actionSpeed > 3) 
         {
             actionSpeed = 1;
-            nmbreClics = 1;
+        }   
+    }
 
-        } else 
-        {
-            actionSpeed = nmbreClics;
-        }
+    public static float getActionSpeed()
+    {
+        return actionSpeed;
     }
 }

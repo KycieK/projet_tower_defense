@@ -9,6 +9,6 @@ public class WorldSpeedUI : MonoBehaviour
 
     void Update()
     {
-        actionSpeedText.text = "x" + WorldTime.actionSpeed.ToString();
+        actionSpeedText.text = "x" + WorldTime.getActionSpeed().ToString();
     }
 }

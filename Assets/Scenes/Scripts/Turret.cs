@@ -5,18 +5,24 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private Transform target;
+    private Enemy targetEnemy;
 
     [Header("General")]
     public float range = 15f;
 
+
     [Header("Use Bullets (default)")]
     public GameObject bulletPrefab;
-    public float fireRate = 1f;
+    public float fireRate = 1f;  //nombre de tir par seconde
     private float fireCountdown = 0f;
+
 
     [Header("Use Laser")]
     public bool useLaser = false;
+    public int damageOverTime = 30;
+    public float slowAmount = .5f;  //0f fait aucun slow et 1f arrête completement la cible
     public LineRenderer lineRenderer;
+
 
     [Header("Unity Setup")]
     public string enemyTag = "Enemy";
@@ -24,13 +30,14 @@ public class Turret : MonoBehaviour
     public Transform partToRotate;
     public float turnSpeed = 10f;
     public Transform firePoint;
+
    
 
 
 
     void Start()
     {
-        InvokeRepeating("UpdateTarget", 0f, 0.5f);
+        InvokeRepeating("UpdateTarget", 0f, 0.5f / WorldTime.getActionSpeed());
     }
 
     void UpdateTarget()
@@ -51,6 +58,7 @@ public class Turret : MonoBehaviour
             if (nearestEnemy != null && shortestDistance <= range)
             {
                 target = nearestEnemy.transform;
+                targetEnemy = nearestEnemy.GetComponent<Enemy>();
             }else 
             {
                 target = null;
@@ -71,6 +79,11 @@ public class Turret : MonoBehaviour
                 }
             }
 
+            if(fireCountdown > 0f)
+            {
+                fireCountdown -= (Time.deltaTime * WorldTime.getActionSpeed());
+            }
+
             return; 
         } 
 
@@ -85,10 +98,10 @@ public class Turret : MonoBehaviour
             if (fireCountdown <= 0f)
             {
                 Shoot();
-                fireCountdown = 1f / (fireRate * WorldTime.actionSpeed);
+                fireCountdown = 1f / fireRate;
             }
 
-            fireCountdown -= Time.deltaTime;
+            fireCountdown -= (Time.deltaTime * WorldTime.getActionSpeed());
 
         }
 
@@ -99,12 +112,15 @@ public class Turret : MonoBehaviour
     {
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed * WorldTime.actionSpeed).eulerAngles;
+        Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed * WorldTime.getActionSpeed()).eulerAngles;
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     void Laser()
     {
+        targetEnemy.TakeDamage(damageOverTime * WorldTime.getActionSpeed() * Time.deltaTime);
+        targetEnemy.Slow(slowAmount);
+
         if(!lineRenderer.enabled) lineRenderer.enabled = true;
 
         lineRenderer.SetPosition(0, firePoint.position);

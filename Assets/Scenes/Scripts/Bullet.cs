@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public int damage = 50;
     public float explosionRadius = 0f;
     public GameObject impactEffect;
+    private float trueSpeed = 0f;
 
     public void Seek (Transform _target)
     {
@@ -27,7 +28,8 @@ public class Bullet : MonoBehaviour
         }
 
         Vector3 dir = target.position - transform.position;
-        float distanceThisFrame = speed * Time.deltaTime * WorldTime.actionSpeed;
+        trueSpeed = speed * WorldTime.getActionSpeed();
+        float distanceThisFrame = trueSpeed * Time.deltaTime;
 
         if(dir.magnitude <= distanceThisFrame)
         {
@@ -42,7 +44,7 @@ public class Bullet : MonoBehaviour
     void HitTarget()
     {
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effectIns, 5f / WorldTime.actionSpeed);
+        Destroy(effectIns, 5f / WorldTime.getActionSpeed());
 
         if(explosionRadius > 0f)
         {

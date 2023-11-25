@@ -1,27 +1,35 @@
 using System.Runtime;
+using Unity.VisualScripting;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-     public int health = 100;
-     public float speed = 10f ;
+
+     [Header("Enemy Stats")]
+
+     public float health = 100;
+     public float startSpeed = 10f;
+
+     [HideInInspector]
+     public float speed;
      public int damage = 1;
-
      public int moneyDrop = 20;
-     
 
-     private Transform target; 
-     private int wavepointIndex = 0;
+     private bool alive;
+
+
+     //faire une liste de debuffs que les tourelles remplissent et qui est gérée dans l'update ici
+     
+     void Start()
+     {
+         speed = startSpeed; 
+         alive = true;
+     }
      public GameObject deathEffect;
 
 
-     void Start ()
-     {
-          target = Waypoints.points[0];
-     }
-
-     public void TakeDamage(int amount) 
+     public void TakeDamage(float amount) 
      {
           health -= amount;
 
@@ -31,46 +39,21 @@ public class Enemy : MonoBehaviour
           }
      }
 
+     public void Slow(float slowAmount)
+     {
+          speed = startSpeed * (1f - slowAmount);
+     }
      void Die()
      {
-          Destroy(gameObject);
-          GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
-          Destroy(effect, 2f);
-          PlayerStats.Money += moneyDrop;
-     }
-
-     void Update ()
-     {
-          Vector3 dir = target.position - transform.position; 
-          transform.Translate(dir.normalized * speed * Time.deltaTime * WorldTime.actionSpeed, Space.World);
-
-          if (Vector3.Distance(transform.position, target.position) <= 0.5f) //plus la valeure xf est grande plus on a un chemin approximatif
-          {
-               GetNextWaypoint();
+          if(alive){
+               alive = false;
+               Destroy(gameObject);
+               GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+               Destroy(effect, 2f / WorldTime.getActionSpeed());
+               if(PlayerStats.Money < 99999) PlayerStats.Money += moneyDrop;
+               else PlayerStats.Money = 99999;
           }
      }
 
-     void GetNextWaypoint()
-     {
-          if(wavepointIndex >= Waypoints.points.Length - 1)
-          {
-               EndPath();
-               return;
-          }
-
-          wavepointIndex++; 
-          target = Waypoints.points[wavepointIndex];
-     }
-
-     void EndPath()
-     {
-          PlayerStats.Lives -= damage;
-          Destroy(gameObject);
-
-          if(PlayerStats.Lives <= 0) 
-          {
-               GameManager.EndGame();
-               return;
-          }
-     }
+    
 }

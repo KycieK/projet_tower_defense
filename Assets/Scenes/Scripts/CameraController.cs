@@ -1,3 +1,4 @@
+using UnityEditor.Playables;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -15,6 +16,13 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(UtilityUI.gameIsOver)
+        {
+            this.enabled = false;
+            return;
+        }
+
         if(Input.GetKeyDown(KeyCode.Escape)) doMovement = !doMovement;
 
         if(!doMovement) return;
@@ -46,5 +54,6 @@ public class CameraController : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
         transform.position = pos;
+        
     }
 }

@@ -4,7 +4,6 @@ public class Shop : MonoBehaviour
 {
     BuildManager buildManager;
     
-    GameObject OverLayCanvas;
     public TurretBlueprint standardTurret; 
     public TurretBlueprint missileLauncher; 
     public TurretBlueprint laserBeamer;

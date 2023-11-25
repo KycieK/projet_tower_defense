@@ -64,10 +64,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scenes\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scenes\Scripts\ToggleShop.cs" />
     <Compile Include="Assets\Scenes\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scenes\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scenes\Scripts\WorldSpeedUI.cs" />
+    <Compile Include="Assets\Scenes\Scripts\EnemyMovement.cs" />
     <Compile Include="Assets\Scenes\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scenes\Scripts\WorldTime.cs" />
     <Compile Include="Assets\Scenes\Scripts\MoneyUI.cs" />
     <Compile Include="Assets\Scenes\Scripts\Turret.cs" />
     <Compile Include="Assets\Scenes\Scripts\Shop.cs" />
@@ -76,6 +81,8 @@
     <Compile Include="Assets\Scenes\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scenes\Scripts\Waypoints.cs" />
+    <Compile Include="Assets\Scenes\Scripts\NodeUI.cs" />
+    <Compile Include="Assets\Scenes\Scripts\UtilityUI.cs" />
     <Compile Include="Assets\Scenes\Scripts\TurretBlueprint.cs" />
     <Compile Include="Assets\Scenes\Scripts\GameManager.cs" />
   </ItemGroup>

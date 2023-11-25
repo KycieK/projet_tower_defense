@@ -23,7 +23,7 @@ public class WaveSpawner : MonoBehaviour
             countdown = timeBetweenWaves ;
         }
 
-        countdown -= Time.deltaTime * WorldTime.actionSpeed;
+        countdown -= Time.deltaTime * WorldTime.getActionSpeed();
 
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
@@ -38,11 +38,11 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         waveIndex++;
-
+        PlayerStats.waves++;
         for (int i = 0; i < waveIndex; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(0.5f / WorldTime.actionSpeed);
+            yield return new WaitForSeconds(0.5f / WorldTime.getActionSpeed());
         }
     }
 
