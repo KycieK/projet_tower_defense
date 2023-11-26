@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d90789cd762c64e8bd0d4fd5faf63b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 500
+  startMoney: 99999
   startLives: 10
 --- !u!114 &96977015
 MonoBehaviour:
@@ -3540,7 +3540,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1056157422}
+  buildManager: {fileID: 0}
   upgradeCostText: {fileID: 934970934}
+  sellCostText: {fileID: 1846571237}
 --- !u!1 &392989028
 GameObject:
   m_ObjectHideFlags: 0
@@ -10154,7 +10156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -10.876495, y: 50.53308}
+  m_AnchoredPosition: {x: -10.876465, y: 50.53308}
   m_SizeDelta: {x: 21.7529, y: 101.0661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124292510
@@ -10237,18 +10239,18 @@ MonoBehaviour:
     prefab: {fileID: 770398881563368376, guid: 70f6998de3ca8254d8457d11f6ad9a27, type: 3}
     cost: 100
     upgradePrefabs:
-    - upgradeCost: 10
+    - upgradeCost: 120
       upgradePrefab: {fileID: 234794890149268546, guid: a1eb44b3008f6c748b1b8fbdb312edee, type: 3}
-    - upgradeCost: 100
+    - upgradeCost: 180
       upgradePrefab: {fileID: 694518663019749278, guid: 869f7022143ade744aabf07327c7cf2c, type: 3}
   missileLauncher:
     prefab: {fileID: 8668577352615222734, guid: 87fb8996cbab9ea448ad4fdf8d7177e7, type: 3}
     cost: 250
     upgradePrefabs:
-    - upgradeCost: 0
-      upgradePrefab: {fileID: 0}
-    - upgradeCost: 0
-      upgradePrefab: {fileID: 0}
+    - upgradeCost: 450
+      upgradePrefab: {fileID: 8668577352615222734, guid: 8691837e8aa35bf4fa4dfe53512cefb3, type: 3}
+    - upgradeCost: 1000
+      upgradePrefab: {fileID: 8668577352615222734, guid: a1c8d50a10b18384d950d5cef5556074, type: 3}
   laserBeamer:
     prefab: {fileID: 1921942842395397862, guid: e3147ecf56e53334fbd7e43ec415a05b, type: 3}
     cost: 500
@@ -18965,7 +18967,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2054792181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 392907951}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2054792181
 MonoBehaviour:
   m_ObjectHideFlags: 0

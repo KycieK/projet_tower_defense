@@ -52,6 +52,11 @@ public class BuildManager : MonoBehaviour
     {
         this.turretToBuild = turretToBuild;
     }
+
+    public void SetSelectedNode(Node selectedNode)
+    {
+        this.selectedNode = selectedNode;
+    }
     
 
 }

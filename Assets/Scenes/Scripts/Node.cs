@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -24,7 +26,10 @@ public class Node : MonoBehaviour
     private Node selectedNode;
 
     BuildManager buildManager;
-    TurretRegister turretRegister;
+    private int sellCost = 0;
+
+    private int turretLevel = 0;
+
 
     void Start()
     {
@@ -57,31 +62,34 @@ public class Node : MonoBehaviour
             return;
         }
 
+
         PlayerStats.Money -= blueprint.cost;
 
         GameObject turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
         this.turret = turret;
 
         turretBlueprint = blueprint;
-
+        turretBlueprint.SetTurretLevel(turretLevel);
         //turret ici c'est une tourelle induite, si on a un buildeffect sur le script Turret il machera au lieu de passer par le buildmanager
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffectPrefab, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 5f / WorldTime.getActionSpeed());
+
+        sellCost += (int)Mathf.Ceil(turretBlueprint.cost / 3);
 
         Debug.Log("Turret built");
     }
 
     public void UpgradeTurret()
     {
-
-        int turretLevel = turretBlueprint.GetTurretLevel();
         int upgradeCost = turretBlueprint.upgradePrefabs[turretLevel].upgradeCost;
+        sellCost += (int)Mathf.Ceil(upgradeCost / 4);
+
+
         if(PlayerStats.Money < upgradeCost) 
         {
             Debug.Log("trop cher pour upgrade");
             return;
         }
-
 
 
         PlayerStats.Money -= upgradeCost;
@@ -93,7 +101,7 @@ public class Node : MonoBehaviour
         //Construit la version Upgraded
         GameObject turret = (GameObject)Instantiate(turretBlueprint.upgradePrefabs[turretLevel].upgradePrefab, GetBuildPosition(), Quaternion.identity);
         this.turret = turret;
-        turretBlueprint.SetTurretLevel(turretLevel + 1);
+        turretLevel++;
 
         
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffectPrefab, GetBuildPosition(), Quaternion.identity);
@@ -104,9 +112,29 @@ public class Node : MonoBehaviour
         Debug.Log("Turret upgraded");
     }
 
+
+
+    public void SellTurret()
+    {
+
+        Destroy(turret);
+        turretBlueprint.SetTurretLevel(0);
+
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffectPrefab, GetBuildPosition(), Quaternion.identity);
+        Destroy(effect, 5f / WorldTime.getActionSpeed());
+
+        PlayerStats.Money += sellCost;
+        sellCost = 0;
+    }
+
     public Vector3 GetBuildPosition()
     {
         return transform.position + positionOffset;
+    }
+
+    public int GetSellCost()
+    {
+        return sellCost;
     }
 
     void OnMouseEnter()
@@ -126,5 +154,10 @@ public class Node : MonoBehaviour
     void OnMouseExit() 
     {
         rend.material.color = startColor; 
+    }
+
+    public int GetTurretLevel()
+    {
+        return turretLevel;
     }
 }

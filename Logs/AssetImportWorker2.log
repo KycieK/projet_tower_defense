@@ -1,0 +1,420 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.13f1 (5f90a5ebde0f) revision 6262949'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'fr' Physical Memory: 32717 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/victo/My project (1)
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+57455
+Successfully changed project path to: C:/Users/victo/My project (1)
+C:/Users/victo/My project (1)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21024] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 3960535039 [EditorId] 3960535039 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TEUH2Q9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21024] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 3960535039 [EditorId] 3960535039 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TEUH2Q9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 150.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/victo/My project (1)/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   NVIDIA
+    VRAM:     8001 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017478 seconds.
+- Loaded All Assemblies, in  1.138 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.805 seconds
+Domain Reload Profiling: 1939ms
+	BeginReloadAssembly (292ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (270ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (467ms)
+		LoadAssemblies (285ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (464ms)
+			TypeCache.Refresh (462ms)
+				TypeCache.ScanAssembly (445ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (806ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (687ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (477ms)
+			ProcessInitializeOnLoadMethodAttributes (171ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.242 seconds
+Refreshing native plugins compatible for Editor in 6.00 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.732 seconds
+Domain Reload Profiling: 1969ms
+	BeginReloadAssembly (328ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (56ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (759ms)
+		LoadAssemblies (649ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (282ms)
+			TypeCache.Refresh (254ms)
+				TypeCache.ScanAssembly (177ms)
+			ScanForSourceGeneratedMonoScriptInfo (19ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (732ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (531ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (400ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 4.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (56.8 KB). Loaded Objects now: 3584.
+Memory consumption went from 126.9 MB to 126.8 MB.
+Total: 3.126700 ms (FindLiveObjects: 0.325400 ms CreateObjectMapping: 0.078600 ms MarkObjects: 2.604800 ms  DeleteObjects: 0.116600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 106979.129131 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/detail_crystal.fbx
+  artifactKey: Guid(78a3bfe2f0cc52640909c05e6548a31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/detail_crystal.fbx using Guid(78a3bfe2f0cc52640909c05e6548a31f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7af03fcb367ae8126477682ad8cae322') in 0.199811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_wideTransition.fbx
+  artifactKey: Guid(fe83da104886c0740888e6ed21a0565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_wideTransition.fbx using Guid(fe83da104886c0740888e6ed21a0565e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b209141f8431d93c8013ca39cf301b18') in 0.081393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_detail_rocks.fbx
+  artifactKey: Guid(3e5dd2f072587004fa199c6185d7a43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_detail_rocks.fbx using Guid(3e5dd2f072587004fa199c6185d7a43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa3038f5ac475a38011fa3ec5bb77c9') in 0.041753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_treeDouble.fbx
+  artifactKey: Guid(bc3c2f440ac42224288c14c42758a585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_treeDouble.fbx using Guid(bc3c2f440ac42224288c14c42758a585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbd34e9b865c8187ecf7c07bd0e4a85') in 0.085702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_riverTransition.fbx
+  artifactKey: Guid(60943d17e79062a4da4274cf1f28bf02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_riverTransition.fbx using Guid(60943d17e79062a4da4274cf1f28bf02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee64c967458c27454c8a134f64ef393') in 0.060862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_slope.fbx
+  artifactKey: Guid(956427343d1399d479df97c5794be7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_slope.fbx using Guid(956427343d1399d479df97c5794be7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fd4f5c2e6e773281f4291a37929c69') in 0.053007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_riverCorner.fbx
+  artifactKey: Guid(614d0b9e5049e9b4f83d956011e5c6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_riverCorner.fbx using Guid(614d0b9e5049e9b4f83d956011e5c6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b0df8d2b178783a007a707843bbf3a') in 0.063430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_detail_crystalLarge.fbx
+  artifactKey: Guid(9d3a99b00d42af64fb627ccaa7070a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_detail_crystalLarge.fbx using Guid(9d3a99b00d42af64fb627ccaa7070a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64aa183771565f446646fdcc9c4674f5') in 0.106806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/detail_rocks.fbx
+  artifactKey: Guid(b74f3c2969e01f247b332f83f17b70a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/detail_rocks.fbx using Guid(b74f3c2969e01f247b332f83f17b70a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd62964b971546b1c63bc0d0672f8beb8') in 0.033208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_split.fbx
+  artifactKey: Guid(a45c3d07da6f066498de6a1faa568040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_split.fbx using Guid(a45c3d07da6f066498de6a1faa568040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a95b41082a6c9849ff57b5cc8a09277') in 0.060704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_treeQuad.fbx
+  artifactKey: Guid(71df7456fd7dd5441a0a861141cc2882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_treeQuad.fbx using Guid(71df7456fd7dd5441a0a861141cc2882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280923a3c6d9806ea8017973584ba4ff') in 0.141752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_woodStructure.fbx
+  artifactKey: Guid(a8e221586da40094da742b434457b2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_woodStructure.fbx using Guid(a8e221586da40094da742b434457b2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8cfd685f827a3fa26bc87de50700b1a') in 0.048069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_detail_dirt.fbx
+  artifactKey: Guid(b28d3601cc40ebd43a05bbfb7c934ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_detail_dirt.fbx using Guid(b28d3601cc40ebd43a05bbfb7c934ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9635bd1e29062d98348cc9865a18438') in 0.054396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_cornerInner.fbx
+  artifactKey: Guid(e330b35aa387aaa4799cf3e93a25eb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_cornerInner.fbx using Guid(e330b35aa387aaa4799cf3e93a25eb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8149e0327433ba8f9d41e5fde4e3a526') in 0.054988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_detail_tree.fbx
+  artifactKey: Guid(a2e28de7cec16e0488bb4657286ef15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_detail_tree.fbx using Guid(a2e28de7cec16e0488bb4657286ef15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8959bb1cf66273f0d1c089624b14d5b2') in 0.052610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_crossing.fbx
+  artifactKey: Guid(8f7f99ae9c1041744a01196c1ef3b642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_crossing.fbx using Guid(8f7f99ae9c1041744a01196c1ef3b642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6213d9bed2db915c85e8afbe1272ce77') in 0.047585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/enemy_ufoRedWeapon.fbx
+  artifactKey: Guid(1ee0a726a48d7c0468860f4c9b8854b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/enemy_ufoRedWeapon.fbx using Guid(1ee0a726a48d7c0468860f4c9b8854b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ff41edfc5747e10c40a376519a3ae2') in 0.063199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/Models/FBX format/snow_tile_riverSlope.fbx
+  artifactKey: Guid(ed9f1515757304b418ecae44b5c03057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/FBX format/snow_tile_riverSlope.fbx using Guid(ed9f1515757304b418ecae44b5c03057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58020c3026a245194e8dfe18bbdd924') in 0.053443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 3.445700 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/detail_crystal.obj
+  artifactKey: Guid(57c1312996092bf4388a4986a4db04d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/detail_crystal.obj using Guid(57c1312996092bf4388a4986a4db04d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd604893958ec0555be7ee57fe9dd68f5') in 0.036035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/enemy_ufoPurple.obj
+  artifactKey: Guid(ede2442de815f04448b951651621ff8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/enemy_ufoPurple.obj using Guid(ede2442de815f04448b951651621ff8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c4ed59bed3771a854fd4b5799b4ed8') in 0.059631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/detail_rocksLarge.obj
+  artifactKey: Guid(2a5051da940d21b4fb9cf52742f1fea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/detail_rocksLarge.obj using Guid(2a5051da940d21b4fb9cf52742f1fea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6d99180b052229ffdca2de567118ad') in 0.033993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/snow_detail_rocksLarge.obj
+  artifactKey: Guid(42e2088aa45172b4f914d1b98c34b72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/snow_detail_rocksLarge.obj using Guid(42e2088aa45172b4f914d1b98c34b72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc73ca205d110c8de8cbb4750f2381e4') in 0.048836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/snow_detail_dirtLarge.obj
+  artifactKey: Guid(e2ee7a18e70a1af448c45753fa22933e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/snow_detail_dirtLarge.obj using Guid(e2ee7a18e70a1af448c45753fa22933e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d09a7ef1f91c91e20d4cf4c12a007c') in 0.049770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/snow_tile_crossing.obj
+  artifactKey: Guid(51d549973964b4f48990c32b77ea713d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/snow_tile_crossing.obj using Guid(51d549973964b4f48990c32b77ea713d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8312ce5d5b62c0cdf9ab5dd08c484ff') in 0.051243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/detail_dirtLarge.obj
+  artifactKey: Guid(f744b897a810b8649a799494a0fac470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/detail_dirtLarge.obj using Guid(f744b897a810b8649a799494a0fac470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815d5e210371dd96bb10b93e62784e13') in 0.037708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/snow_tile_cornerOuter.obj
+  artifactKey: Guid(d9190eb65f44c5c4b8a596ec4a0c3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/snow_tile_cornerOuter.obj using Guid(d9190eb65f44c5c4b8a596ec4a0c3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27cd428d352fcf43ec3184cda2ec86b') in 0.044717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/enemy_ufoYellow.obj
+  artifactKey: Guid(79807685fb622b640bea8b2d684447d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/enemy_ufoYellow.obj using Guid(79807685fb622b640bea8b2d684447d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03f2e77c5a2fbfac37aea9d2dee0e67') in 0.053291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/detail_tree.obj
+  artifactKey: Guid(6deda363ee058e243b527381e10d7a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/detail_tree.obj using Guid(6deda363ee058e243b527381e10d7a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f5b5e77b4e85f56ced145e6ef30d4ef') in 0.046875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/Imports/World/Models/OBJ format/snow_detail_rocks.obj
+  artifactKey: Guid(fdb0dde5598b6d54da3ee2d68ad050f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/Models/OBJ format/snow_detail_rocks.obj using Guid(fdb0dde5598b6d54da3ee2d68ad050f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a37ee853be78ee03f1431f24431835') in 0.041670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
