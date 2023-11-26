@@ -15,13 +15,16 @@ public class Node : MonoBehaviour
 
     [HideInInspector]
     public TurretBlueprint turretBlueprint;
+
     [HideInInspector]
     public bool isUpgraded = false;
 
     private Renderer rend;
     private Color startColor; 
+    private Node selectedNode;
 
     BuildManager buildManager;
+    TurretRegister turretRegister;
 
     void Start()
     {
@@ -36,7 +39,8 @@ public class Node : MonoBehaviour
 
         if(turret != null)
         {
-            buildManager.SelectNode(this);
+            selectedNode = this;
+            buildManager.SelectNode(selectedNode);
             return; 
         }
 
@@ -59,7 +63,8 @@ public class Node : MonoBehaviour
         this.turret = turret;
 
         turretBlueprint = blueprint;
-        //Ici on peut remplacer le buildManager.buildEffectPrefab en gerant le build effect dans turret pour choisir un effet different pour chaque tourelle
+
+        //turret ici c'est une tourelle induite, si on a un buildeffect sur le script Turret il machera au lieu de passer par le buildmanager
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffectPrefab, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 5f / WorldTime.getActionSpeed());
 
@@ -68,22 +73,27 @@ public class Node : MonoBehaviour
 
     public void UpgradeTurret()
     {
-        if(PlayerStats.Money < turretBlueprint.upgradeCost) 
+
+        int turretLevel = turretBlueprint.GetTurretLevel();
+        int upgradeCost = turretBlueprint.upgradePrefabs[turretLevel].upgradeCost;
+        if(PlayerStats.Money < upgradeCost) 
         {
             Debug.Log("trop cher pour upgrade");
             return;
         }
 
-        PlayerStats.Money -= turretBlueprint.upgradeCost;
+
+
+        PlayerStats.Money -= upgradeCost;
 
         //Detruit l'ancienne tourelle
         Destroy(this.turret);
 
 
         //Construit la version Upgraded
-        GameObject turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        GameObject turret = (GameObject)Instantiate(turretBlueprint.upgradePrefabs[turretLevel].upgradePrefab, GetBuildPosition(), Quaternion.identity);
         this.turret = turret;
-
+        turretBlueprint.SetTurretLevel(turretLevel + 1);
 
         
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffectPrefab, GetBuildPosition(), Quaternion.identity);

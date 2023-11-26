@@ -48,9 +48,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  upgradedPrefab: {fileID: 770398881563368376, guid: 70f6998de3ca8254d8457d11f6ad9a27, type: 3}
+  upgradeCost: 3
   bulletPrefab: {fileID: 0}
   fireRate: 1
   useLaser: 1
+  damageOverTime: 30
+  slowAmount: 0.5
   lineRenderer: {fileID: 7841009497278611093}
   enemyTag: Enemy
   partToRotate: {fileID: 6990425850939801969}

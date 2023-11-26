@@ -70,7 +70,10 @@
     <Compile Include="Assets\Scenes\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scenes\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scenes\Scripts\WorldSpeedUI.cs" />
+    <Compile Include="Assets\Scenes\Scripts\UpgradeList.cs" />
     <Compile Include="Assets\Scenes\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scenes\Scripts\TurretRegister.cs" />
+    <Compile Include="Assets\Scenes\Scripts\TurretNodePair.cs" />
     <Compile Include="Assets\Scenes\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scenes\Scripts\WorldTime.cs" />
     <Compile Include="Assets\Scenes\Scripts\MoneyUI.cs" />

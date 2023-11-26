@@ -248,6 +248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  upgradedPrefab: {fileID: 1921942842395397862, guid: e3147ecf56e53334fbd7e43ec415a05b, type: 3}
+  upgradeCost: 2
   bulletPrefab: {fileID: 7056584077149338726, guid: 6fc354d34307b284497e89f33833845a, type: 3}
   fireRate: 0.5
   useLaser: 0

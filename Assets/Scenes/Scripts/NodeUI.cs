@@ -9,15 +9,16 @@ public class NodeUI : MonoBehaviour
     public GameObject ui;
     private Node target; 
 
-    public TextMeshProUGUI upgradeCost;
+    public TextMeshProUGUI upgradeCostText;
 
     public void SetTarget(Node target)
     {
         this.target = target;
+        int turretLevel = target.turretBlueprint.GetTurretLevel();
+        int upgradeCost = target.turretBlueprint.upgradePrefabs[turretLevel].upgradeCost;
 
         transform.position = target.GetBuildPosition();
-
-        upgradeCost.text = "<b>UPGRADE</b>\n$" + target.turretBlueprint.upgradeCost;
+        upgradeCostText.text = "<b>UPGRADE</b>\n$" + upgradeCost;
 
         ui.SetActive(!ui.activeSelf);
     }

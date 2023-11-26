@@ -10,7 +10,6 @@ public class Turret : MonoBehaviour
     [Header("General")]
     public float range = 15f;
 
-
     [Header("Use Bullets (default)")]
     public GameObject bulletPrefab;
     public float fireRate = 1f;  //nombre de tir par seconde

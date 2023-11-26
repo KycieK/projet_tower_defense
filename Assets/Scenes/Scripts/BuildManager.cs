@@ -47,6 +47,11 @@ public class BuildManager : MonoBehaviour
     {
         return turretToBuild;
     }
+
+    public void SetTurretToBuild(TurretBlueprint turretToBuild)
+    {
+        this.turretToBuild = turretToBuild;
+    }
     
 
 }
