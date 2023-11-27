@@ -11,8 +11,9 @@ public class PathManager : MonoBehaviour
 
     public int minPathLength = 30;
 
-    public GameObject pathTile; 
-
+    public GridCellObject[] pathCellObjects;
+    public GridCellObject[] sceneryCellObjects;
+    
     private PathGenerator pathGenerator; 
 
     // Start is called before the first frame update
@@ -36,7 +37,12 @@ public class PathManager : MonoBehaviour
 
         foreach (Vector2Int pathCell in pathCells)
         {
-            Instantiate(pathTile, new Vector3(pathCell.x, 0f, pathCell.y), Quaternion.identity);
+            int neighbourValue = pathGenerator.getCellNeighbourValue(pathCell.x, pathCell.y);
+            Debug.Log("Tile : " + pathCell.x + ", " + pathCell.y + " neighbour value : " + neighbourValue);
+            GameObject pathTile = pathCellObjects[neighbourValue].cellPrefab;
+            GameObject pathTileCell = Instantiate(pathTile, new Vector3(pathCell.x, 0f, pathCell.y), Quaternion.identity);
+            pathTileCell.transform.Rotate(0f, pathCellObjects[neighbourValue].yRotation, 0f, Space.Self);
+
             yield return new WaitForSeconds(0.2f);
         }
         

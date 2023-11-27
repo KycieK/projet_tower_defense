@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8e159a0fe25ff4aa86fc30240e903f, type: 3}
+  m_Name: VerticalPathCell
+  m_EditorClassIdentifier: 
+  cellType: 0
+  cellPrefab: {fileID: 8537040215480634418, guid: 8c85145fe06e31d499c7bec97677c86a, type: 3}
+  yRotation: 0

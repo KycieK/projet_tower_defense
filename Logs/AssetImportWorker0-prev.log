@@ -1,0 +1,548 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.13f1 (5f90a5ebde0f) revision 6262949'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'fr' Physical Memory: 32717 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/victo/My project (1)
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62174
+Successfully changed project path to: C:/Users/victo/My project (1)
+C:/Users/victo/My project (1)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20160] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 2212977650 [EditorId] 2212977650 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TEUH2Q9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20160] Host "[IP] 192.168.1.109 [Port] 0 [Flags] 2 [Guid] 2212977650 [EditorId] 2212977650 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TEUH2Q9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 13.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/victo/My project (1)/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   NVIDIA
+    VRAM:     8001 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.019906 seconds.
+- Loaded All Assemblies, in  0.458 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.273 seconds
+Domain Reload Profiling: 727ms
+	BeginReloadAssembly (136ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (132ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (169ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (150ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (273ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (209ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (132ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.716 seconds
+Refreshing native plugins compatible for Editor in 4.55 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.601 seconds
+Domain Reload Profiling: 1311ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (438ms)
+		LoadAssemblies (356ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (183ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (148ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (602ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (437ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (315ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.2 KB). Loaded Objects now: 3584.
+Memory consumption went from 126.8 MB to 126.8 MB.
+Total: 3.456400 ms (FindLiveObjects: 0.343400 ms CreateObjectMapping: 0.078900 ms MarkObjects: 2.900000 ms  DeleteObjects: 0.132400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 165142.410301 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/enemy_ufoGreenWeapon.dae
+  artifactKey: Guid(5c697fc21edc2e44ebe897f3d82016cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/enemy_ufoGreenWeapon.dae using Guid(5c697fc21edc2e44ebe897f3d82016cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cf37f0c6bad11b008363043598d868') in 0.187274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_detail_crystalLarge.dae
+  artifactKey: Guid(8023187a25e6c304b8d3eaee98c255d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_detail_crystalLarge.dae using Guid(8023187a25e6c304b8d3eaee98c255d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844c14072fd5b5ba7190b5f4d94df539') in 0.054450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_cornerSquare.dae
+  artifactKey: Guid(2cc926b6d6596e243963002ba11899aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_cornerSquare.dae using Guid(2cc926b6d6596e243963002ba11899aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0652010edf20f05e39a295f33dd7da53') in 0.036596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_detail_crystal.dae
+  artifactKey: Guid(4a7cdab33a6772c4497f8873415401c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_detail_crystal.dae using Guid(4a7cdab33a6772c4497f8873415401c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187aa83f1d799ab3ac026ab2313830ae') in 0.032585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_detail_rocksLarge.dae
+  artifactKey: Guid(152ac6bf0bdb0cb42a669f3f316dc8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_detail_rocksLarge.dae using Guid(152ac6bf0bdb0cb42a669f3f316dc8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd2f6c922f87f9beb4f05ad83770f3b') in 0.033699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_cornerInner.dae
+  artifactKey: Guid(28de4e3f2b02b1f439fc631af29c16a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_cornerInner.dae using Guid(28de4e3f2b02b1f439fc631af29c16a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d23c529b527b6788b1e39ec5df48c65') in 0.032264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/Imports/World/DAE format
+  artifactKey: Guid(590d059a1191eba45bbd11b183c5362a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format using Guid(590d059a1191eba45bbd11b183c5362a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f578aa32a2d52aad7bb5c57b3f824009') in 0.001049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_detail_tree.dae
+  artifactKey: Guid(150eea55fbc70634d840edec346200d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_detail_tree.dae using Guid(150eea55fbc70634d840edec346200d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0494c936fd98ac79431903aa0d85cca9') in 0.042360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_endSpawn.dae
+  artifactKey: Guid(92f789b961a50da448c11aa11e6e19dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_endSpawn.dae using Guid(92f789b961a50da448c11aa11e6e19dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2e6f1cbf1be54b9e2bf503dfbc0967') in 0.046995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/enemy_ufoPurpleWeapon.dae
+  artifactKey: Guid(7a48b4813114325428e49a64fba0a83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/enemy_ufoPurpleWeapon.dae using Guid(7a48b4813114325428e49a64fba0a83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ac0a2d8ac25ac7e15b4fca5dcc55bc') in 0.048176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_crystal.dae
+  artifactKey: Guid(412fe3e2934a6154eb1ac4bbb114a343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_crystal.dae using Guid(412fe3e2934a6154eb1ac4bbb114a343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1979085d781823372d284c4346b976a2') in 0.075955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_rock.dae
+  artifactKey: Guid(546e4b4d812f3084d9f367bff34c35ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_rock.dae using Guid(546e4b4d812f3084d9f367bff34c35ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5558104b382275e788188eef2eb9a09') in 0.049477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/enemy_ufoPurple.dae
+  artifactKey: Guid(35812a8377dc2404f9f23b12e42dde35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/enemy_ufoPurple.dae using Guid(35812a8377dc2404f9f23b12e42dde35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262dcbca69159f3719cd15e67c028ce9') in 0.041747 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_crossing.dae
+  artifactKey: Guid(ed358d95f588c8047b8af54d16fb9377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_crossing.dae using Guid(ed358d95f588c8047b8af54d16fb9377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31038ff5a6f0eecbdcbd044d68f8d8f2') in 0.036893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile.dae
+  artifactKey: Guid(f3da981352c8e5b4ca7659f190df4e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile.dae using Guid(f3da981352c8e5b4ca7659f190df4e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f443dbfb7d76ecbd41ba5acaf684e870') in 0.028184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_detail_rocks.dae
+  artifactKey: Guid(8740d4f8df51bcb4388b25dd73d31196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_detail_rocks.dae using Guid(8740d4f8df51bcb4388b25dd73d31196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0238ccf9cb13420a60e78f65e2e1392d') in 0.026746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.954202 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_straight.dae
+  artifactKey: Guid(5f075810f2c2dd54d85d0820f28c6eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_straight.dae using Guid(5f075810f2c2dd54d85d0820f28c6eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b04248ecdb881ef2cbaebb3eb4a4f67') in 0.035229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_wideSplit.dae
+  artifactKey: Guid(96b55b5ac3137b24ea06e65b94380c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_wideSplit.dae using Guid(96b55b5ac3137b24ea06e65b94380c06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '739728b4c107efcfb58ee89c35a48586') in 0.034902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_woodStructure_high.dae
+  artifactKey: Guid(53ca1df93928ce94f80bc46d5eba203f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_woodStructure_high.dae using Guid(53ca1df93928ce94f80bc46d5eba203f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535b2643473254cca85d05e6da810df9') in 0.029973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_tree.dae
+  artifactKey: Guid(6b6b1629fd7070f4696370f9bcb48b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_tree.dae using Guid(6b6b1629fd7070f4696370f9bcb48b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc14517f0d52dcb7b0f8f00377b59c7c') in 0.045260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/snow_tile_treeDouble.dae
+  artifactKey: Guid(eb8e7dad6cb01af429eac84ae6816978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/snow_tile_treeDouble.dae using Guid(eb8e7dad6cb01af429eac84ae6816978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1578bf11907dc69f944de148b9460f12') in 0.048810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.091547 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_cornerLarge.dae
+  artifactKey: Guid(1aba758abd873a5438cb9eee0efbe284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_cornerLarge.dae using Guid(1aba758abd873a5438cb9eee0efbe284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f265623deec6889fda82a4fbd635ee78') in 0.033385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_endRoundSpawn.dae
+  artifactKey: Guid(7a8fb1a564552204d8a2169bd70881e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_endRoundSpawn.dae using Guid(7a8fb1a564552204d8a2169bd70881e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb54679e049408f33890567b3b311b3d') in 0.036582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_endSpawn.dae
+  artifactKey: Guid(8bb825f94e0554241b950899b62caef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_endSpawn.dae using Guid(8bb825f94e0554241b950899b62caef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75d6a6438d5d5a324e626aaf1e1412e') in 0.039878 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_crystal.dae
+  artifactKey: Guid(a7a94ac109008a244a66075c6a62679c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_crystal.dae using Guid(a7a94ac109008a244a66075c6a62679c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffdc2772452e475d8ab956c01a1da22') in 0.057422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_straight.dae
+  artifactKey: Guid(d1b9d42e0d241f4499af1f226b2881c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_straight.dae using Guid(d1b9d42e0d241f4499af1f226b2881c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6619ee87e2ecb1ea70c0ef12fe65ae9c') in 0.031548 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_riverSlopeLarge.dae
+  artifactKey: Guid(a58c6a46ac1665544aa0c589def82238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_riverSlopeLarge.dae using Guid(a58c6a46ac1665544aa0c589def82238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0186747297ffe82f90d840f7e5a38d61') in 0.033591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_spawnRound.dae
+  artifactKey: Guid(c64b05f12b986844aa64167786d89a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_spawnRound.dae using Guid(c64b05f12b986844aa64167786d89a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf0c7f742ece26e840abf1adc72c5d8') in 0.040721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_riverFall.dae
+  artifactKey: Guid(ae66282635b4d514cbed39d961f1ed0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_riverFall.dae using Guid(ae66282635b4d514cbed39d961f1ed0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b84759bf5eb767b02f95c7ba8afd641') in 0.032076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_rock.dae
+  artifactKey: Guid(fbdad55fc7394464bb43967218c7573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_rock.dae using Guid(fbdad55fc7394464bb43967218c7573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828a18f5d2b62cb25ae56d76e9223094') in 0.036607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.684961 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_wideCorner.dae
+  artifactKey: Guid(383ee810e4f3a5e4fb0ea18bccd9a265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_wideCorner.dae using Guid(383ee810e4f3a5e4fb0ea18bccd9a265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60b25e1fddaadaa8b9e6292f84a968f') in 0.028576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/tile_wideTransition.dae
+  artifactKey: Guid(3420e416aef8f4f48a5925a5ca180372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/tile_wideTransition.dae using Guid(3420e416aef8f4f48a5925a5ca180372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2636921ea703feeb81cc3b20b85b505') in 0.031053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerRound_middleA.dae
+  artifactKey: Guid(26a8a2ed523bd8043ab6a31a5e609c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerRound_middleA.dae using Guid(26a8a2ed523bd8043ab6a31a5e609c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10712da061b5ac0aefc23777fa783c7f') in 0.028199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerRound_bottomA.dae
+  artifactKey: Guid(344d4b669df754a47acdc67ee3dbcd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerRound_bottomA.dae using Guid(344d4b669df754a47acdc67ee3dbcd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7768a15860cefdfa4fc4a200746ee281') in 0.030340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerRound_roofC.dae
+  artifactKey: Guid(c97e70acae28b7141ba45494dee5e5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerRound_roofC.dae using Guid(c97e70acae28b7141ba45494dee5e5a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '417a6627a4124b87bb1824cb4fe4426c') in 0.032723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerRound_crystals.dae
+  artifactKey: Guid(39dc78afe939564488ca773dc2718fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerRound_crystals.dae using Guid(39dc78afe939564488ca773dc2718fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106f3a024c10e917b8a62f438a7e0a1b') in 0.059055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerRound_sampleD.dae
+  artifactKey: Guid(0a625292046ccf040b0fa15ffef5ea1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerRound_sampleD.dae using Guid(0a625292046ccf040b0fa15ffef5ea1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83d23bc2461f1c8efc6485cf6cbbb46') in 0.034681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerSquare_bottomC.dae
+  artifactKey: Guid(a614363c7a6a43a4f85d7e123c324e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerSquare_bottomC.dae using Guid(a614363c7a6a43a4f85d7e123c324e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87303c8197dc2c078fc11a275c8f2924') in 0.025829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerRound_topB.dae
+  artifactKey: Guid(9c006118c98500b47acf730fa477d29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerRound_topB.dae using Guid(9c006118c98500b47acf730fa477d29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77aaf5ae10e57981f939462c7ad9081') in 0.031828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerSquare_middleB.dae
+  artifactKey: Guid(6b7087c75aabd2f41894893f9e080a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerSquare_middleB.dae using Guid(6b7087c75aabd2f41894893f9e080a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d1e62cbdaad28de237136d980e865d') in 0.030504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.176378 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerSquare_roofC.dae
+  artifactKey: Guid(fcf59cf4329642f49a200910e0ecff5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerSquare_roofC.dae using Guid(fcf59cf4329642f49a200910e0ecff5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49bfdf63bb0831001e4187ff119945e') in 0.027070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerSquare_sampleC.dae
+  artifactKey: Guid(9ab68cfc39ca6a6419d8242eff92e5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerSquare_sampleC.dae using Guid(9ab68cfc39ca6a6419d8242eff92e5a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab7fc3e07204d4ef5620ac5600a00f6') in 0.030000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerSquare_sampleD.dae
+  artifactKey: Guid(2d22f9a856e183a40860d578576f15ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerSquare_sampleD.dae using Guid(2d22f9a856e183a40860d578576f15ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a0b9ddc3bd4eb1814ca309dea23720') in 0.029687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/weapon_catapult.dae
+  artifactKey: Guid(a0f6a284ce629d44091add1817f458b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/weapon_catapult.dae using Guid(a0f6a284ce629d44091add1817f458b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a1b1f34faf666461537cd27cc1fe50') in 0.041835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/Imports/World/DAE format/towerSquare_sampleE.dae
+  artifactKey: Guid(e37204d694a5ea5458b750b170da9abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Imports/World/DAE format/towerSquare_sampleE.dae using Guid(e37204d694a5ea5458b750b170da9abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fee220702fb95329ed89c7c9f80e293') in 0.029834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
