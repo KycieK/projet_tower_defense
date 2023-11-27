@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RockCell
   m_EditorClassIdentifier: 
   cellType: 1
-  cellPrefab: {fileID: 2514402991919587101, guid: 5752eee74332af6459166905d17f1e03, type: 3}
+  cellPrefab: {fileID: 3704058360138903445, guid: fe9c9b3e57602cc459939eafdef48d85, type: 3}
   yRotation: 0

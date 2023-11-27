@@ -30,7 +30,13 @@ public class PathManager : MonoBehaviour
             pathSize = pathCells.Count;
         }
 
-        StartCoroutine(LayPathCells(pathCells));
+        StartCoroutine(LayGrid(pathCells));
+    }
+
+    IEnumerator LayGrid(List<Vector2Int> pathCells)
+    {
+        yield return LayPathCells(pathCells);
+        yield return LaySceneryCells();
     }
 
     private IEnumerator LayPathCells(List<Vector2Int> pathCells){
@@ -38,20 +44,30 @@ public class PathManager : MonoBehaviour
         foreach (Vector2Int pathCell in pathCells)
         {
             int neighbourValue = pathGenerator.getCellNeighbourValue(pathCell.x, pathCell.y);
-            Debug.Log("Tile : " + pathCell.x + ", " + pathCell.y + " neighbour value : " + neighbourValue);
             GameObject pathTile = pathCellObjects[neighbourValue].cellPrefab;
             GameObject pathTileCell = Instantiate(pathTile, new Vector3(pathCell.x, 0f, pathCell.y), Quaternion.identity);
             pathTileCell.transform.Rotate(0f, pathCellObjects[neighbourValue].yRotation, 0f, Space.Self);
 
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.025f);
         }
         
         yield return null;
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator LaySceneryCells()
     {
-        
+        for (int y = gridHeight; y > 0; y--)
+        {
+            for (int x = 0; x < gridWidth; x++)
+            {
+                if(pathGenerator.CellIsEmpty(x, y))
+                {
+                    int randomSceneryCellIndex = Random.Range(0, sceneryCellObjects.Length);
+                    Instantiate(sceneryCellObjects[randomSceneryCellIndex].cellPrefab, new Vector3(x, 0f, y), Quaternion.identity);
+                    yield return new WaitForSeconds(0.0025f);
+                }
+            }
+        }
+        yield return null;
     }
 }

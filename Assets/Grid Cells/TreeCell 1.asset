@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TreeCell 1
   m_EditorClassIdentifier: 
   cellType: 1
-  cellPrefab: {fileID: 7369685458399289497, guid: 97ca481d56dd7d645b0d413d0f1abab7, type: 3}
+  cellPrefab: {fileID: 1838229436284175243, guid: 8aaaa3b11f736a545951588341f10d6c, type: 3}
   yRotation: 0

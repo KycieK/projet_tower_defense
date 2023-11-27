@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e8e159a0fe25ff4aa86fc30240e903f, type: 3}
-  m_Name: OreCell
+  m_Name: HillCell
   m_EditorClassIdentifier: 
   cellType: 1
-  cellPrefab: {fileID: 2193430360137716762, guid: 7aca6266ac319ec4fa5414c006404ecf, type: 3}
+  cellPrefab: {fileID: 3561755995603586838, guid: ddd0e661f91cf4946acc9431b9606cf9, type: 3}
   yRotation: 0

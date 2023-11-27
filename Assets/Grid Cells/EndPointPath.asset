@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EndPointPath
   m_EditorClassIdentifier: 
   cellType: 0
-  cellPrefab: {fileID: 5317350730921898090, guid: df132488c5857394cadebfc6bfdc2348, type: 3}
+  cellPrefab: {fileID: 2041417437115408907, guid: eb29d57a9bf88b742869bc69b3007a26, type: 3}
   yRotation: 90

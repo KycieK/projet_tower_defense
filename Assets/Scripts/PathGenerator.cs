@@ -60,13 +60,13 @@ public class PathGenerator
         return pathCells;
     }
 
-    private bool CellIsEmpty(int x, int y)
+    public bool CellIsEmpty(int x, int y)
     {
         return !pathCells.Contains(new Vector2Int(x,y));
     }
 
     //inverse de cellisempty
-    private bool CellIsTaken(int x, int y)
+    public bool CellIsTaken(int x, int y)
     {
         return pathCells.Contains(new Vector2Int(x,y));
     }

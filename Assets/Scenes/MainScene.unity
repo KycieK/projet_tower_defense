@@ -761,7 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 99999
-  startLives: 10
+  startLives: 99999
 --- !u!114 &96977015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,9 +799,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6924743da2e708438e1c961a2d7161a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridWidth: 20
+  gridWidth: 18
   gridHeight: 10
-  minPathLength: 40
+  minPathLength: 45
   pathCellObjects:
   - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
   - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
@@ -820,12 +820,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
   - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
   sceneryCellObjects:
-  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: c1109d8be70cceb40863fe72744dd6d4, type: 2}
+  - {fileID: 11400000, guid: f4fb65073659b494c933f1f5bc4964fe, type: 2}
+  - {fileID: 11400000, guid: 3969bf60876f58740ab2458616f10677, type: 2}
   - {fileID: 11400000, guid: ce9141301f4d94d41ba11232260f6536, type: 2}
   - {fileID: 11400000, guid: 76a2f764e51f7ae40a5598a4e5c29249, type: 2}
+  - {fileID: 11400000, guid: 76a2f764e51f7ae40a5598a4e5c29249, type: 2}
+  - {fileID: 11400000, guid: 1db7e8738fbfb584e8cdd9753668f8d2, type: 2}
   - {fileID: 11400000, guid: 1db7e8738fbfb584e8cdd9753668f8d2, type: 2}
   - {fileID: 11400000, guid: 51fc755ac7d8cc34cb1b5343a3897655, type: 2}
-  - {fileID: 11400000, guid: f4fb65073659b494c933f1f5bc4964fe, type: 2}
+  - {fileID: 11400000, guid: 51fc755ac7d8cc34cb1b5343a3897655, type: 2}
+  - {fileID: 11400000, guid: 51fc755ac7d8cc34cb1b5343a3897655, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
+  - {fileID: 11400000, guid: bd601f1354f1c0144ae81a76e52f9b83, type: 2}
 --- !u!1 &111909965
 GameObject:
   m_ObjectHideFlags: 0
