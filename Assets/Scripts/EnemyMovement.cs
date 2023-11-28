@@ -9,14 +9,14 @@ using UnityEngine;
 public class enemyMovement : MonoBehaviour
 {
     private Transform target; 
-    private int wavepointIndex = 0;
+    private int wavepointIndex = WaypointsList.waypoints.Count - 1;
     private Enemy enemy;
     private float trueSpeed;
 
     void Start ()
     {
         enemy = GetComponent<Enemy>();
-        target = Waypoints.points[0];
+        target = WaypointsList.waypoints[WaypointsList.waypoints.Count - 1];
     }
 
      void Update ()
@@ -25,7 +25,7 @@ public class enemyMovement : MonoBehaviour
           trueSpeed = enemy.speed * WorldTime.getActionSpeed();
           transform.Translate(dir.normalized * trueSpeed * Time.deltaTime, Space.World);
 
-          if (Vector3.Distance(transform.position, target.position) <= 0.5f) //plus la valeure xf est grande plus on a un chemin approximatif
+          if (Vector3.Distance(transform.position, target.position) <= 0.2f) //plus la valeure xf est grande plus on a un chemin approximatif
           {
                GetNextWaypoint();
           }
@@ -35,14 +35,15 @@ public class enemyMovement : MonoBehaviour
 
      void GetNextWaypoint()
      {
-          if(wavepointIndex >= Waypoints.points.Length - 1)
+          if(wavepointIndex < 0)
           {
                EndPath();
                return;
           }
 
-          wavepointIndex++; 
-          target = Waypoints.points[wavepointIndex];
+          target = WaypointsList.waypoints[wavepointIndex];
+          wavepointIndex--; 
+
      }
 
      void EndPath()

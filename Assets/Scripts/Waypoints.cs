@@ -1,16 +1,14 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
+[System.Serializable]
 public class Waypoints : MonoBehaviour
 {
-    public static Transform[] points; 
-
+    WaypointsList waypointsList;
     void Awake () 
     {
-        points = new Transform[transform.childCount];
-        for (int i = 0; i < points.Length; i++)
-        {
-            points[i] = transform.GetChild(i);
-        }
-        
+        WaypointsList.waypoints.Add(this.transform);
+        Debug.Log("Added " + transform + " to list");
     }
 }

@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\WaypointsList.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\WorldSpeedUI.cs" />
     <Compile Include="Assets\Scripts\PathGenerator.cs" />

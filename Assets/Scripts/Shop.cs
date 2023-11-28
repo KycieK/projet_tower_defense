@@ -9,7 +9,6 @@ public class Shop : MonoBehaviour
     public TurretBlueprint laserBeamer;
 
     
-
     void Start()
     {
         buildManager = BuildManager.instance;

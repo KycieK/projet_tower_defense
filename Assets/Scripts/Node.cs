@@ -66,6 +66,8 @@ public class Node : MonoBehaviour
         PlayerStats.Money -= blueprint.cost;
 
         GameObject turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        turret.transform.Translate(0f, -0.8f, 0f, Space.Self);
+        turret.transform.Rotate(0f, 180f, 0f);
         this.turret = turret;
 
         turretBlueprint = blueprint;
@@ -100,6 +102,8 @@ public class Node : MonoBehaviour
 
         //Construit la version Upgraded
         GameObject turret = (GameObject)Instantiate(turretBlueprint.upgradePrefabs[turretLevel].upgradePrefab, GetBuildPosition(), Quaternion.identity);
+        turret.transform.Translate(0f, -0.8f, 0f, Space.Self);
+        turret.transform.Rotate(0f, 180f, 0f);
         this.turret = turret;
         turretLevel++;
 
@@ -116,9 +120,8 @@ public class Node : MonoBehaviour
 
     public void SellTurret()
     {
-
+        turretLevel = 0;
         Destroy(turret);
-        turretBlueprint.SetTurretLevel(0);
 
         GameObject effect = (GameObject)Instantiate(buildManager.buildEffectPrefab, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 5f / WorldTime.getActionSpeed());

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using UnityEditor;
 using UnityEngine;
 
 public class PathGenerator
@@ -14,6 +15,8 @@ public class PathGenerator
         this.width = width; 
         this.height = height;
     }
+
+    
 
 
     public List<Vector2Int> GeneratePath()

@@ -25,15 +25,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770398881563368376}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -12.5, y: 0.5, z: 17.5}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4320656458349308893}
   - {fileID: 6993828136657036736}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5945069972990792751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,9 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5827b8c047e2b9f4095b6d622ddfd581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
-  upgradedPrefab: {fileID: 8668577352615222734, guid: 87fb8996cbab9ea448ad4fdf8d7177e7, type: 3}
-  upgradeCost: 1
+  range: 2
   bulletPrefab: {fileID: 7666336719643896228, guid: bb7deafb4e76c6e42a54d15a69b223c1, type: 3}
   fireRate: 1
   useLaser: 0

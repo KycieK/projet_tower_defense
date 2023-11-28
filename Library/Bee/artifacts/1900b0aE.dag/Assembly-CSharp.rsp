@@ -377,6 +377,7 @@
 "Assets/Scripts/UtilityUI.cs"
 "Assets/Scripts/WaveSpawner.cs"
 "Assets/Scripts/Waypoints.cs"
+"Assets/Scripts/WaypointsList.cs"
 "Assets/Scripts/WorldSpeedUI.cs"
 "Assets/Scripts/WorldTime.cs"
 -langversion:9.0

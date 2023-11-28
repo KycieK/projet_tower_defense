@@ -11,7 +11,7 @@ public class ToggleShop : MonoBehaviour
     
     private void Start()
     {
-        if(shopIcons != null) shopIcons.SetActive(true);
+        if(shopIcons != null) shopIcons.SetActive(!shopIcons.activeSelf);
     }
 
     public void ToggleShopUI()
