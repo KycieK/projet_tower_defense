@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEditor;
 using UnityEngine;
 
@@ -21,14 +22,18 @@ public class enemyMovement : MonoBehaviour
 
      void Update ()
      {
-          Vector3 dir = target.position - transform.position; 
+          UnityEngine.Vector3 dir = target.position - transform.position; 
+          float angle = UnityEngine.Vector3.Angle(dir, transform.forward);
           trueSpeed = enemy.speed * WorldTime.getActionSpeed();
           transform.Translate(dir.normalized * trueSpeed * Time.deltaTime, Space.World);
+          transform.Rotate(0f, angle, 0f, Space.World);
 
-          if (Vector3.Distance(transform.position, target.position) <= 0.2f) //plus la valeure xf est grande plus on a un chemin approximatif
+          if (UnityEngine.Vector3.Distance(transform.position, target.position) <= 0.2f) //plus la valeure xf est grande plus on a un chemin approximatif
           {
                GetNextWaypoint();
           }
+
+
 
           enemy.speed = enemy.startSpeed; 
      }

@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56c5931ceae6f1742ad5daca083020c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6385518882762774877, guid: b96269b2b82f47147ad009e999ba6101, type: 3}
+  enemyPrefab: {fileID: 7791634030319820536, guid: 8d2197bdf2099734c8b01bd6827b6791, type: 3}
   timeBetweenWaves: 10
   spawnPoint: {fileID: 8502494023982518039, guid: 9425a736daab4de488bb126f5880ca91, type: 3}
   waveCountdownText: {fileID: 1630702148}
